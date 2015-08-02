@@ -1,24 +1,29 @@
-// webpack.config.js
-var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
-var data = require('./data')
-
+var webpack = require('webpack');
 module.exports = {
-    entry: './entry.js',
-
+    entry: [
+        'webpack/hot/only-dev-server',
+        "./js/app.jsx"
+    ],
     output: {
-        filename: 'bundle.js',
-        path: __dirname,
-        libraryTarget: 'umd'
+        path: __dirname + '/build',
+        filename: "bundle.js"
     },
-
     module: {
         loaders: [{
-            test: /\.jsx$/,
-            loader: 'jsx-loader'
+            test: /\.js?$/,
+            loaders: ['react-hot', 'babel'],
+            exclude: /node_modules/
+        }, {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader'
+        }, {
+            test: /\.css$/,
+            loader: "style!css"
         }]
     },
-
     plugins: [
-        new StaticSiteGeneratorPlugin('bundle.js', data.routes, data)
+        new webpack.NoErrorsPlugin()
     ]
-}
+
+};
