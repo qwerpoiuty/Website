@@ -5,11 +5,15 @@ let Home = React.createClass({
   render() {
     return(
 	    <div className = "home">
+	    	<canvas id = "canvas"></canvas>
 	    	<div className = "col-md-12 homePane" id = "intro">
-	    		<div className = 'introContainer'>
-		    		<h1 className = "greeting">Hello. Welcome to Website</h1>
-		    		<h2 className = "greeting">Glad you caould make it</h2>
+	    		<div className = "row">
+		    		<div className = 'introContainer'>
+			    		<h1 className = "greeting">Hello, I'm Stan. Welcome to Website</h1>
+			    		<h2 className = "greeting">Glad you could make it</h2>
+					</div>
 				</div>
+					
 	    	</div>
 	    	<div className = "col-md-12 homePane" id = "about">
 	    		<div className = 'aboutContainer'>
@@ -20,12 +24,14 @@ let Home = React.createClass({
 		    			<a href = "https://www.linkedin.com/in/stanle1" target = "_blank"><i className="fa fa-linkedin-square fa-3x"></i></a>
 		    		</div>
 	    		</div>
+	    		
 	    	</div>
 	    	<div className = "col-md-12 homePane" id = "writing">
 	    		<h1 className = "writing">I also write sometimes...</h1>
 	    		<ul className = "postList">
 	    			
 	    		</ul>
+	    		
 	    	</div>
 	    </div>
     	);
