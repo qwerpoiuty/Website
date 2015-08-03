@@ -1,0 +1,16 @@
+.homePane{
+	height:100vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.aboutContainer{
+	.icons{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		.fa{
+			margin:1vh;
+		}
+	}
+}

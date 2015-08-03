@@ -10,16 +10,16 @@ module.exports = {
     },
     module: {
         loaders: [{
-            test: /\.js?$/,
+            test: /\.jsx?$/,
             loaders: ['react-hot', 'babel'],
             exclude: /node_modules/
         }, {
-            test: /\.js$/,
+            test: /\.jsx$/,
             exclude: /node_modules/,
             loader: 'babel-loader'
         }, {
-            test: /\.css$/,
-            loader: "style!css"
+            test: /\.scss$/,
+            loader: 'style!css!sass'
         }]
     },
     plugins: [
