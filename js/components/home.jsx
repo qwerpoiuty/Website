@@ -1,6 +1,7 @@
 import React from 'react';
 import Time from './time.jsx'
 import FallingBlocks from './canvas.jsx'
+import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
 
 let Home = React.createClass({ 
 
@@ -29,11 +30,10 @@ let Home = React.createClass({
 	    		
 	    	</div>
 	    	<div className = "col-md-12 homePane" id = "writing">
-	    		<h1 className = "writing">I also write sometimes...</h1>
-	    		<ul className = "postList">
-	    			
-	    		</ul>
-	    		
+	    		<div className = "BlogContainer">
+	    			<Link to="blog"><h1 className = "blogTitle">I also write sometimes... <i className = "fa fa-chevron-right"></i></h1></Link>
+
+	    		</div>
 	    	</div>
 	    </div>
     	);
