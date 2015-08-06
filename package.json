@@ -33,6 +33,9 @@
     "webpack-dev-server": "^1.10.1"
   },
   "dependencies": {
-    "react-canvas": "0.0.1"
+    "alt": "^0.17.1",
+    "moment": "^2.10.6",
+    "react-canvas": "0.0.1",
+    "underscore": "^1.8.3"
   }
 }

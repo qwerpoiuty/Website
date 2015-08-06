@@ -11,7 +11,6 @@ var Graphic = React.createClass({
 		this.paint2(context);
 		this.paint3(context);
 		this.paint4(context)
-		console.log('hi')
 	},
 
 	componentDidUpdate: function() {
@@ -22,7 +21,7 @@ var Graphic = React.createClass({
 		this.paint3(context)
 		this.paint4(context)
 	},
-
+	
 	paint1: function(context) {
 		var red = parseInt(255 * (this.props.xLocation/window.innerWidth))
 		var green = parseInt(255 * (this.props.yLocation/(window.innerHeight * 3)))
@@ -77,6 +76,9 @@ var FallingBlocks = React.createClass({
 
 	componentDidMount: function() {
 		requestAnimationFrame(this.tick);
+	},
+	componentWillUnmount:function(){
+		this.tick = null
 	},
 
 	tick: function() {

@@ -1,17 +1,16 @@
 import React from 'react';  
 import Router from 'react-router';  
 import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
-
-import LoginHandler from './components/Login.jsx';
+// import PostHandler from './components/post.jsx'
+import BlogHandler from './components/blog.jsx';
+import PostHandler from './components/post.jsx'
 import HomeHandler from './components/home.jsx';
+
 require('../styles/main.scss')
 let App = React.createClass({  
   render() {
     return (
-      <div className="nav">
-        <Link to="app">App</Link>
-        <Link to="login">Login</Link>
-        <Link to="home">Home</Link>
+      <div>
         {/* this is the importTant part */}
         <RouteHandler/>
       </div>
@@ -20,9 +19,10 @@ let App = React.createClass({
 });
 
 let routes = (  
-  <Route name="Home" path="/" handler={HomeHandler}>
-    <Route name="login" path="/login" handler={LoginHandler}/>
-    
+  <Route name="app" path="/" handler={App}>
+    <Route name="blog" path="/blog" handler={BlogHandler}/>
+    <Route name="post" path="/blog/:post" handler={PostHandler} />
+    <DefaultRoute handler = {HomeHandler}/>
   </Route>
 );
 
