@@ -9,15 +9,14 @@ var Blog = React.createClass({
   
   mixins: [Router.State, Paths],
   render: function() {
-    
+    console.log('blog',this)
     var self = this      
     return (
       <div>
-        <h1>title</h1>
+        <h1>This is a Title</h1>
         <ul>
         { 
           _.map(this.getAllPosts(), function(post, key) {
-          	console.log(Router.state)
             return <li key={key}>
               <div>
                 <Link key={key} to={'/blog/' + key}>{post.title}</Link>

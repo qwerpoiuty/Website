@@ -30,17 +30,13 @@ var paths = {
 var postReq = 
 console.log('hi',postReq)
 module.exports = {
-  allPaths: function() {
-    return paths;
-  },
   allPosts: function() {
     return paths.posts;
   },
   postForPath: function(path) {
-  	debugger
     return this.postReq()('./' + paths.posts[path].md);
   },
   postReq: function() {
-    return require.context('./posts', false, /^\.\/.*\.md$/)
+    return require.context('../posts', false, /^\.\/.*\.md$/);
   }
 };

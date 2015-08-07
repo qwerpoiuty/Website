@@ -10,8 +10,8 @@ var Post = React.createClass({
     getCurrentPathname: React.PropTypes.func.isRequired,
     getCurrentParams: React.PropTypes.func.isRequired
   },
-  
   render: function() {
+    console.log('blog',this)
     var post = this.getPathMeta(this.context.router)
     var title = post.title
     var published = post.published

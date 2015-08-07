@@ -49,7 +49,7 @@ var config = {
             loader: 'style!css!sass'
         }, {
             test: /\.md$/,
-            loader: 'raw!markdown'
+            loader: 'html!markdown'
         }]
     },
 
