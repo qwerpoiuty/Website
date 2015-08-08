@@ -1,8 +1,8 @@
 var Webpack = require('webpack');
 var path = require('path');
 var nodeModulesPath = path.resolve(__dirname, 'node_modules');
-var buildPath = path.resolve(__dirname, 'build');
-// var mainPath = path.resolve('app.jsx');
+var buildPath = path.resolve(__dirname, 'public', 'build');
+var mainPath = path.resolve(__dirName, 'js', 'app.jsx');
 
 var config = {
 
@@ -18,7 +18,7 @@ var config = {
         'webpack-dev-server/client?http://localhost:8080',
 
         // Our application
-        './js/app.jsx'
+        'mainPath'
     ],
     output: {
 
