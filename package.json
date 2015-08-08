@@ -40,6 +40,7 @@
         "react-canvas": "0.0.1",
         "react-native": "^0.8.0",
         "react-native-level-fs": "^1.0.3",
-        "underscore": "^1.8.3"
+        "underscore": "^1.8.3",
+        "webpack": "^1.10.5"
     }
 }
