@@ -1,47 +1,48 @@
 {
-  "name": "site",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server",
-    "postinstall": "node deploy"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/qwerpoiuty/Website.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/qwerpoiuty/Website/issues"
-  },
-  "homepage": "https://github.com/qwerpoiuty/Website#readme",
-  "devDependencies": {
-    "babel-core": "^5.8.20",
-    "babel-loader": "^5.3.2",
-    "css-loader": "^0.15.6",
-    "extract-text-webpack-plugin": "^0.8.2",
-    "node-sass": "^3.2.0",
-    "react": "^0.13.3",
-    "react-hot-loader": "^1.2.8",
-    "react-router": "^0.13.3",
-    "sass-loader": "^1.0.3",
-    "style-loader": "^0.12.3",
-    "webpack": "^1.10.5",
-    "webpack-dev-server": "^1.10.1"
-  },
-  "dependencies": {
-    "alt": "^0.17.1",
-    "express": "^4.13.3",
-    "markdown-loader": "^0.1.4",
-    "marked": "^0.3.5",
-    "moment": "^2.10.6",
-    "raw-loader": "^0.5.1",
-    "react-canvas": "0.0.1",
-    "react-native": "^0.8.0",
-    "react-native-level-fs": "^1.0.3",
-    "underscore": "^1.8.3",
-    "webpack": "^1.10.5"
-  }
+    "name": "site",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server",
+        "postinstall": "node deploy"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/qwerpoiuty/Website.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/qwerpoiuty/Website/issues"
+    },
+    "homepage": "https://github.com/qwerpoiuty/Website#readme",
+    "devDependencies": {
+
+        "webpack": "^1.10.5",
+        "webpack-dev-server": "^1.10.1"
+    },
+    "dependencies": {
+        "babel-core": "^5.8.20",
+        "babel-loader": "^5.3.2",
+        "css-loader": "^0.15.6",
+        "extract-text-webpack-plugin": "^0.8.2",
+        "node-sass": "^3.2.0",
+        "react": "^0.13.3",
+        "react-hot-loader": "^1.2.8",
+        "react-router": "^0.13.3",
+        "sass-loader": "^1.0.3",
+        "style-loader": "^0.12.3",
+        "alt": "^0.17.1",
+        "express": "^4.13.3",
+        "markdown-loader": "^0.1.4",
+        "marked": "^0.3.5",
+        "moment": "^2.10.6",
+        "raw-loader": "^0.5.1",
+        "react-canvas": "0.0.1",
+        "react-native": "^0.8.0",
+        "react-native-level-fs": "^1.0.3",
+        "underscore": "^1.8.3",
+        "webpack": "^1.10.5"
+    }
 }
