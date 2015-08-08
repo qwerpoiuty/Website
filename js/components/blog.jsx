@@ -7,23 +7,29 @@ var React = require('react'),
     
 var Blog = React.createClass({
   
-  mixins: [Router.State, Paths],
+  mixins: [Paths],
+  contextTypes: {
+    router:React.PropTypes.func,
+    getCurrentPathname: React.PropTypes.func.isRequired,
+    getCurrentParams: React.PropTypes.func.isRequired
+  },
   render: function() {
-    console.log('blog',this)
     var self = this      
     return (
-      <div>
-        <h1>This is a Title</h1>
-        <ul>
+      <div className = 'blog'>
+        <div className = 'titleContainer'>
+          <h1 className ='title' >This is a Title</h1>
+          <h4 className = 'subTitle'>Biased recounts of Stan's misadventures</h4>
+        </div>
+        <ul className = 'blogList'>
         { 
           _.map(this.getAllPosts(), function(post, key) {
             return <li key={key}>
               <div>
-                <Link key={key} to={'/blog/' + key}>{post.title}</Link>
-                <br/>
+                <Link className = 'blogTitle' key={key} to={'/blog/' + key}>{post.title} </Link>
                 <Moment datetime={post.published} />
               </div>
-              <div>
+              <div className = 'preview'>
                 <blockquote>{self.getPreviewForPost(key)}</blockquote>
               </div>
             </li>

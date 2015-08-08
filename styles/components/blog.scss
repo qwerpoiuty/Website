@@ -1,0 +1,30 @@
+.blog{
+	margin-left: 2vh;
+	.titleContainer{
+		border: 2px dotted grey;
+		text-align: center;
+		margin: 4vh;
+		.title{
+			font-weight:bold;
+			font-size:4em;
+		}
+		.subTitle{
+			font-size:2em;
+		}
+	}
+	.blogList{
+		li{
+			list-style:none;
+		}
+		.blogTitle{
+			font-size: 2em;
+		}
+		.date{
+			font-size:1.1em;
+			color:grey
+		}
+		.preview{
+			margin-left:4vh;
+		}
+	}
+}

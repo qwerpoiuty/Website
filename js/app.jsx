@@ -11,7 +11,7 @@ let App = React.createClass({
   render() {
     return (
       <div>
-        {/* this is the importTant part */}
+        {this.props.children}
         <RouteHandler/>
       </div>
     );

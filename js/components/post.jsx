@@ -1,32 +1,33 @@
-var Moment = require('./Moment.jsx'),
-  Paths = require('./PathsMixin.jsx'),
-  React = require('react'),
-  Router = require('react-router');
+var Paths = require('./PathsMixin.jsx'),
+React = require('react'),
+Router = require('react-router'),
+Link  = Router.Link,
+Moment  = require('./Moment.jsx')
+;
 
 var Post = React.createClass({
-  mixins: [Router.State, Paths],
-   contextTypes: {
+  mixins: [Router,Paths],
+  contextTypes: {
     router:React.PropTypes.func,
-    getCurrentPathname: React.PropTypes.func.isRequired,
-    getCurrentParams: React.PropTypes.func.isRequired
-  },
-  render: function() {
-    console.log('blog',this)
+
+},
+
+render: function() {
     var post = this.getPathMeta(this.context.router)
     var title = post.title
     var published = post.published
     var content = this.getPost(this.context.router)
-    console.log('hi',content)
     return (
       <div>
-        <header>
-          <h1>{title}</h1>
+          <header className = 'header'>
+          <Link to ='blog'>Back to Blog</Link>
+          <h1 className = 'title'>{title}</h1>
           <Moment datetime={published} />
-        </header>
-        <span dangerouslySetInnerHTML={{__html: content}} />
+          </header>
+          <span className = 'content' dangerouslySetInnerHTML={{__html: content}} />
       </div>
-    );
-  }
+      );
+}
 });
 
 module.exports = Post;

@@ -1,5 +1,5 @@
 
-var paths = require('../paths.jsx'),
+var paths = require('../../paths.jsx'),
   React = require('react'),
     Router = require('react-router');
 
