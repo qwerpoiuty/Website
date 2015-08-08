@@ -1,10 +1,10 @@
 var paths = {
   posts: {
-    first_post: {
+    one: {
       title: 'Hello my name is Stan',
-      md: 'first_post.md',
+      md: '01-Introduction.md',
       published: '2015-08-07',
-      preview: 'Icebreaker! Because everyone loves those'
+      preview: 'Icebreaker! Because everyone loves those! I\'m going to introduce myself and try to explain what I\'m writing. Please read this first?'
     }
   }
 

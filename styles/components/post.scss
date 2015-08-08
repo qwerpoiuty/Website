@@ -1,0 +1,30 @@
+.post{
+	background-color:$beige;
+	height:100vh;
+	.header{
+		text-align: center;
+		padding-bottom: 1%;
+		.title{
+			margin: 0;
+			font-weight:bold;
+			font-size: 4em;
+			color:$blue;
+			padding: 5vh 0 2vh 0;
+		}
+		.date{
+			color:grey;
+			margin-bottom: 5vh;
+			font-size: 1.5em;
+		}
+		.fa{
+			position: absolute;
+			left:5vh;
+			top:7vh;
+		}
+	}
+	.contentContainer{
+		padding: 0 15% 10% 15%;
+		background-color:$beige;
+		font-size:1.1em;
+	}
+}

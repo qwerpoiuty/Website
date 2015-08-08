@@ -18,13 +18,15 @@ render: function() {
     var published = post.published
     var content = this.getPost(this.context.router)
     return (
-      <div>
+      <div className = 'post'>
           <header className = 'header'>
-          <Link to ='blog'>Back to Blog</Link>
-          <h1 className = 'title'>{title}</h1>
+          <Link to ='blog'><i className = "fa fa-chevron-left fa-4x"></i></Link>
+          <h1 className = 'title'>&#123;{title}&#125;</h1>
           <Moment datetime={published} />
           </header>
-          <span className = 'content' dangerouslySetInnerHTML={{__html: content}} />
+          <div className = 'contentContainer'>
+            <span className = 'content' dangerouslySetInnerHTML={{__html: content}} />
+          </div>
       </div>
       );
 }

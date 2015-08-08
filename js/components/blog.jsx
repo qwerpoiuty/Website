@@ -16,10 +16,11 @@ var Blog = React.createClass({
   render: function() {
     var self = this      
     return (
-      <div className = 'blog'>
+      <div className = 'blog col-md-12'>
         <div className = 'titleContainer'>
-          <h1 className ='title' >This is a Title</h1>
-          <h4 className = 'subTitle'>Biased recounts of Stan's misadventures</h4>
+          <Link to = "app" ><i className = 'fa fa-chevron-left fa-4x'></i></Link>
+          <h1 className ='title' >&#123;This is a Title&#125;</h1>
+          <h4 className = 'subTitle'>Biased recounts of Stan's misadventures, trivia, code.</h4>
         </div>
         <ul className = 'blogList'>
         { 

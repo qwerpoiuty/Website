@@ -23,9 +23,9 @@ var Graphic = React.createClass({
 	},
 	
 	paint1: function(context) {
-		var red = parseInt(255 * (this.props.xLocation/window.innerWidth))
-		var green = parseInt(255 * (this.props.yLocation/(window.innerHeight * 3)))
-		var blue = parseInt(((this.props.xLocation*this.props.yLocation)/(window.innerWidth*window.innerHeight*3))*255)
+		var red = parseInt(155 * (this.props.xLocation/window.innerWidth)+100)
+		var green = parseInt(155 * (this.props.yLocation/(window.innerHeight * 3))+100)
+		var blue = parseInt(((this.props.xLocation*this.props.yLocation)/(window.innerWidth*window.innerHeight*3))*155+100)
 		context.save();
 		context.translate(this.props.xLocation,this.props.yLocation);
 		context.fillStyle = 'rgb(' +red+ ',' + green + ',' + blue + ')'

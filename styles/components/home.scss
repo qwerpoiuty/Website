@@ -1,32 +1,76 @@
 .home{
-	canvas{
-		width:100%;
-		height: 300%;
-		position:absolute;
-		left: 0;
-		top: 0;
-		z-index:-1;
-	}
-	.homePane{
-		height:100vh;
-		display:flex;
-		justify-content: center;
-		align-items: center;
-		position:relative;
-	}
-	.introContainer{
-		text-align:center;
-		b{
-			color:red;
+	background-color:$beige;
+	width:100%;
+	.content{
+		canvas{
+			width:100%;
+			height: 100%;
+			position:absolute;
+			left: 0;
+			top: 0;
+			
 		}
-	}
-	.aboutContainer{
-		.icons{
+		.homePane{
+			height:100vh;
 			display:flex;
 			justify-content: center;
 			align-items: center;
-			.fa{
-				margin:1vh;
+			position:relative;
+		}
+		.introContainer{
+			text-align:center;
+			.greeting{
+				color:$blue;
+				font-size: 4em;
+				font-weight: bold;
+			}
+			.subGreeting{
+				color:$light;
+				font-size: 3em;
+				font-weight: bold;
+			}
+			b{
+				color:red;
+			}
+		}
+		.aboutContainer{
+			.about{
+				color:$blue;
+				font-size: 3em;
+				font-weight: bold;
+			}
+			.icons{
+				display:flex;
+				justify-content: center;
+				align-items: center;
+				.fa{
+					color:black;
+					margin:3vh;
+				}
+				.fa:hover{
+	    			cursor: pointer;
+	    			color:$light;
+				}
+			}
+		}
+		.BlogContainer{
+			text-align: center;
+			.linkContainer{
+				position: fixed;
+				bottom: 5%;
+				width:100%;
+				.blogTitle{
+					margin-right: auto;
+					margin-left:auto;
+					color:$blue;
+					font-size:4em;
+					font-weight:bold;
+				}
+			}
+			.projectContainer{
+				display: flex;
+				justify-content: left;
+				align-items: left;
 			}
 		}
 	}
