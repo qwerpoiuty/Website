@@ -1,7 +1,7 @@
 var React = require('react'),
   Router = require('react-router'),
   Link  = Router.Link,
-  Moment  = require('./Moment.jsx'),
+  Moment  = require('./moment.jsx'),
   Paths = require('./PathsMixin.jsx'),
   _ = require('underscore');
     

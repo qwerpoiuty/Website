@@ -2,7 +2,7 @@ var Paths = require('./PathsMixin.jsx'),
 React = require('react'),
 Router = require('react-router'),
 Link  = Router.Link,
-Moment  = require('./Moment.jsx')
+Moment  = require('./moment.jsx')
 ;
 
 var Post = React.createClass({
