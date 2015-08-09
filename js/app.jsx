@@ -5,7 +5,7 @@ import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
 import BlogHandler from './components/blog.jsx';
 import PostHandler from './components/post.jsx'
 import HomeHandler from './components/home.jsx';
-import InstrumentApp from './components/InstrumentApp.jsx'
+import InstrumentApp from './components/instrumentApp.jsx'
 
 require('../styles/main.scss')
 let App = React.createClass({  
