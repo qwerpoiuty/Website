@@ -21,9 +21,9 @@ let Home = React.createClass({
 		    	</div>
 		    	<div className = "col-md-12 homePane" id = "about">
 		    		<div className = 'aboutContainer'>
-		    			<h1 className = "about">Qwerpoiuty is my handle on the Internet. You can find around here.</h1>
+		    			<h1 className = "about">Qwerpoiuty is my handle on the Internet. You can find me around here.</h1>
 		    			<div className = "icons">
-			    			<a href = "mailto:stan.le1107@gmail.com" target = "_blank"><i className="fa fa-envelope fa-3x"></i></a>
+			    			<a href = "mailto:hello@stanle.me" target = "_blank"><i className="fa fa-envelope fa-3x"></i></a>
 			    			<a href = "https://github.com/qwerpoiuty" target  = "_blank"><i className="fa fa-github fa-3x"></i></a>
 			    			<a href = "https://www.linkedin.com/in/stanle1" target = "_blank"><i className="fa fa-linkedin-square fa-3x"></i></a>
 			    		</div>
