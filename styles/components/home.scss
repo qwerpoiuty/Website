@@ -56,7 +56,8 @@
 		.BlogContainer{
 			text-align: center;
 			.linkContainer{
-				position: fixed;
+				position: absolute;
+				padding-top: 5vh;
 				bottom: 5%;
 				width:100%;
 				.blogTitle{

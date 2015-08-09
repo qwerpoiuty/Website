@@ -25,6 +25,9 @@
 	.contentContainer{
 		padding: 0 15% 10% 15%;
 		background-color:$beige;
-		font-size:1.1em;
+		font-size:1.2em;
+		.content{
+			font-family: 'Oxygen', sans-serif;
+		}
 	}
 }
