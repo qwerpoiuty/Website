@@ -2,7 +2,7 @@ import React from "react"
 
 let one = ['Writes code', 'Makes websites', 'Stays professional', 'Communicates ideas clearly']
 let two = ['Works Hard', 'Is nice', 'Is humble', 'Always Hungry']
-let three = ['I knows the JavaScripts','I am comfortable with the Terminal and Git','I like working with back-end folks too','I want to craft high-quality user ezperiences for web and mobile','I know about SASS','My spirit is independent','I have the ability to create new web technologies and user experiences']
+let three = ['I knows the JavaScripts','I am comfortable with the Terminal and Git','I like working with back-end folks too','I want to craft high-quality user experiences for web and mobile','I know about SASS','My spirit is independent','I have the ability to create new web technologies and user experiences']
 let four = ['Money', 'Benefits', '401k', 'Amazing clients', ' Dogs to pet(cats too?)', 'Paid holidays and vacation', 'A smart and fun team']
 let instrumentApp = React.createClass({
 	render(){
