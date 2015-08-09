@@ -34,8 +34,12 @@ let Home = React.createClass({
 		    		<div className = "BlogContainer">
 		    			<h1 className = 'title'>Things I do in my free time...</h1>
 		    			<div className = "projectContainer">
-		    				<a href = "http://www.quokka.chat" target = "_blank" ><h2 className = "projectName">QuokkaChat</h2></a>
-		    				<h3 className = "projectDescription">A webapp to remove some of the noise involved with commenting on videos. Organizes comments based on the video time they were made.</h3>
+		    				<ul>
+		    					<li><a href = "http://www.quokka.chat" target = "_blank" ><h2 className = "projectName">QuokkaChat</h2></a>
+			    				<h3 className = "projectDescription">A webapp to remove some of the noise involved with commenting on videos. Organizes comments based on the video time they were made.</h3></li>
+		    					<li><a href = "https://github.com/qwerpoiuty/FaceOff" target = "_blank" ><h2 className = "projectName">FaceOff</h2></a>
+		    					<h3 className = "projectDescription">A game 2 person game where you use your face position to control your block and try to shoot down your opponent with simple math</h3></li>
+		    				</ul>
 		    			</div>
 		    			<div className = "linkContainer">
 		    				<Link to="blog"><h1 className = "blogTitle">I also write sometimes... <i className = "fa fa-chevron-right"></i></h1></Link>

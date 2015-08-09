@@ -87,8 +87,8 @@ var FallingBlocks = React.createClass({
 		if (this.state.xLocation > (window.innerWidth -100) || this.state.xLocation <0) this.state.right = !this.state.right
 		if (this.state.right) difx = 3
 		else difx = -3
-		if (this.state.down) dify = 4
-		else dify = -4
+		if (this.state.down) dify = 5
+		else dify = -5
 		this.setState({ yLocation:this.state.yLocation + dify, xLocation: this.state.xLocation + difx });
 		requestAnimationFrame(this.tick);
 	},
