@@ -1,4 +1,6 @@
 import React from "react"
+import Router from 'react-router'
+import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
 
 let one = ['Writes code', 'Makes websites', 'Stays professional', 'Communicates ideas clearly']
 let two = ['Works Hard', 'Is nice', 'Is humble', 'Always Hungry']
@@ -54,7 +56,7 @@ let instrumentApp = React.createClass({
 					</div>
 				</div>
 				<div className = 'thanks'>
-					<h2 className = "fade-in last">Thank you for your consideration</h2>
+					 <Link to = "app" ><h2 className = "fade-in last">Thank you for your consideration. Feel free to look around the site</h2></Link>
 				</div>
 			</div>
 			) 
