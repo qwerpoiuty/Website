@@ -38,6 +38,7 @@
 				color:$blue;
 				font-size: 3em;
 				font-weight: bold;
+				padding: 0 7%;
 			}
 			.icons{
 				display:flex;
@@ -55,6 +56,11 @@
 		}
 		.BlogContainer{
 			text-align: center;
+			.title{
+				font-size: 3em;
+				color:$light;
+				margin-top:-10vh;
+			}
 			.linkContainer{
 				position: absolute;
 				padding-top: 5vh;
@@ -64,11 +70,12 @@
 					margin-right: auto;
 					margin-left:auto;
 					color:$blue;
-					font-size:4em;
+					font-size:3em;
 					font-weight:bold;
 				}
 			}
 			.projectContainer{
+				padding:0 7%;
 				display: flex;
 				justify-content: left;
 				align-items: left;
