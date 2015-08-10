@@ -25,6 +25,7 @@ var Blog = React.createClass({
         <ul className = 'blogList'>
         { 
           _.map(this.getAllPosts(), function(post, key) {
+            console.log(key)
             return <li key={key}>
               <div>
                 <Link className = 'blogTitle' key={key} to={'/blog/' + key}>{post.title} </Link>

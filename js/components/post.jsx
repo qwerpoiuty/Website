@@ -20,7 +20,7 @@ render: function() {
     return (
       <div className = 'post'>
           <header className = 'header'>
-          <Link to ='blog'><i className = "fa fa-chevron-left fa-4x"></i></Link>
+          <Link to ='app'><i className = "fa fa-chevron-left fa-4x"></i></Link>
           <h1 className = 'title'>&#123;{title}&#125;</h1>
           <Moment datetime={published} />
           </header>
