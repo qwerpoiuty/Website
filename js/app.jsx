@@ -3,9 +3,10 @@ import Router from 'react-router';
 import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
 // import PostHandler from './components/post.jsx'
 import BlogHandler from './components/blog.jsx';
-import PostHandler from './components/post.jsx'
+import PostHandler from './components/post.jsx';
 import HomeHandler from './components/home.jsx';
-import InstrumentApp from './components/instrumentApp.jsx'
+import Galaga from './components/galaga.jsx;'
+
 
 require('../styles/main.scss')
 let App = React.createClass({  
@@ -23,7 +24,7 @@ let routes = (
   <Route name="app" path="/" handler={App}>
     <Route name="blog" path="/blog" handler={BlogHandler}/>
     <Route name="post" path="/blog/:post" handler={PostHandler} />
-    <Route name = "application" path = "/app" handler = {InstrumentApp}/>
+    <Route name = "galaga" path = "/galaga" handler = {Galaga} />
     <DefaultRoute handler = {HomeHandler}/>
   </Route>
 );

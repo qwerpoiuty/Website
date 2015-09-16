@@ -9,7 +9,7 @@ let Home = React.createClass({
     return(
 	    <div className = "col-md-12 home">
 	    	<div className = "content">
-	    		<FallingBlocks />
+	    		<FallingBlocks/>
 		    	<div className = "col-md-12 homePane" id = "intro">
 		    		<div className = "row">
 			    		<div className = 'introContainer'>
@@ -21,7 +21,7 @@ let Home = React.createClass({
 		    	</div>
 		    	<div className = "col-md-12 homePane" id = "about">
 		    		<div className = 'aboutContainer'>
-		    			<h1 className = "about">Qwerpoiuty is my handle on the Internet. You can find me around here. Click <a href = "https://drive.google.com/file/d/0B-jny_6Icg6QeHVjLVBDU0taVkk/view?usp=sharing" target = "_blank">here</a> for my resume</h1>
+		    			<h1 className = "about">Qwerpoiuty is my handle on the Internet. You can find me around here. Click <a href = "https://drive.google.com/file/d/0B-jny_6Icg6QeHVjLVBDU0taVkk/view?usp=sharing" target = "_blank">here</a> for my resume.</h1>
 		    			<div className = "icons">
 			    			<a href = "mailto:hello@stanle.me" target = "_blank"><i className="fa fa-envelope fa-3x"></i></a>
 			    			<a href = "https://github.com/qwerpoiuty" target  = "_blank"><i className="fa fa-github fa-3x"></i></a>
