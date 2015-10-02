@@ -1,13 +1,13 @@
-var React = require('react');
-var ReactCanvas = require('react-canvas');
+import React from 'react'
+import ReactCanvas from 'react-canvas'
 
-var Surface = ReactCanvas.Surface;
+let Surface = ReactCanvas.Surface;
 var Image = ReactCanvas.Image;
 var Text = ReactCanvas.Text;
 
-var gameboard = React.createClass({
+var Galaga = React.createClass({
 
-  render: function () {
+  render() {
     var surfaceWidth = window.innerWidth;
     var surfaceHeight = window.innerHeight;
     var imageStyle = this.getImageStyle();
@@ -15,7 +15,7 @@ var gameboard = React.createClass({
 
     return (
       <Surface width={surfaceWidth} height={surfaceHeight} left={0} top={0}>
-        <Image style={imageStyle} src='...' />
+        <Image style={imageStyle} src='http://placekitten.com/g/200/300' />
         <Text style={textStyle}>
           Here is some text below an image.
         </Text>
@@ -23,11 +23,11 @@ var gameboard = React.createClass({
     );
   },
 
-  getImageHeight: function () {
+  getImageHeight() {
     return Math.round(window.innerHeight / 2);
   },
 
-  getImageStyle: function () {
+  getImageStyle() {
     return {
       top: 0,
       left: 0,
@@ -36,7 +36,7 @@ var gameboard = React.createClass({
     };
   },
 
-  getTextStyle: function () {
+  getTextStyle() {
     return {
       top: this.getImageHeight() + 10,
       left: 0,
@@ -49,4 +49,4 @@ var gameboard = React.createClass({
 
 });
 
-export default gameboard
+export default Galaga

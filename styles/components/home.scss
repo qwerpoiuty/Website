@@ -1,6 +1,11 @@
 .home{
 	background-color:$beige;
 	width:100%;
+	.fa-chevron-down{
+		position: absolute;
+		bottom:4%;
+		left: 50%;
+	}
 	.content{
 		canvas{
 			width:100%;
@@ -19,6 +24,9 @@
 		}
 		.introContainer{
 			text-align:center;
+			-webkit-box-shadow: 1px 1px 11px -45px rgba(255,255,255,1);
+-moz-box-shadow: 1px 1px 11px -45px rgba(255,255,255,1);
+box-shadow: 1px 1px 11px -45px rgba(255,255,255,1);
 			a{
 				text-decoration: underline;
 			}

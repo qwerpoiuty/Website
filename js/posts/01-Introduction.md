@@ -34,3 +34,5 @@ Things I'm going to try to do with this blog:
  * Entertain you
 
 Thanks for reading! I hope you'll enjoy your stay.
+
+Also no comments on these posts because I don't like having arguments in public. Email me if you want to fite me. 
