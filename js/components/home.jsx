@@ -9,6 +9,7 @@ let Home = React.createClass({
 	    <div className = "col-md-12 home">
 	    	<div className = "content">
 	    		<FallingBlocks/>
+				<h1 className = "blogTitle"><a href="#/blog">I also write sometimes... <i className = "fa fa-chevron-right"></i></a></h1>
 		    	<div className = "col-md-12 homePane" id = "intro">
 		    		<div className = "row">
 			    		<div className = 'introContainer'>
@@ -39,9 +40,6 @@ let Home = React.createClass({
 		    					<li><a href = "https://github.com/qwerpoiuty/FaceOff" target = "_blank" ><h2 className = "projectName">FaceOff</h2></a>
 		    					<h3 className = "projectDescription">A game 2 person game where you use your face position to control your block and try to shoot down your opponent with simple math</h3></li>
 		    				</ul>
-		    			</div>
-		    			<div className = "linkContainer">
-		    				<Link to="blog"><h1 className = "blogTitle">I also write sometimes... <i className = "fa fa-chevron-right"></i></h1></Link>
 		    			</div>
 		    		</div>
 		    	</div>

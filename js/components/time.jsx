@@ -19,7 +19,7 @@ class Time extends React.Component {
 	render() {
 		let elapsed = Math.round(this.state.elapsed/100)
 		let seconds = (elapsed/10).toFixed(1)
-		return (<h3>You have been watching blocks bounce for <b>{seconds}</b> seconds.</h3>);
+		return (<h3 className = 'timer'>You have been watching blocks bounce for <b>{seconds}</b> seconds.</h3>);
 	}
 }
 
