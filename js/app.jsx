@@ -4,7 +4,7 @@ import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
 import BlogHandler from './components/blog.jsx';
 import PostHandler from './components/post.jsx';
 import HomeHandler from './components/home.jsx';
-import GalagaHandler from './components/galaga.jsx';
+import ResumeHandler from './components/resume.jsx';
 
 
 require('../styles/main.scss')
@@ -23,7 +23,7 @@ let routes = (
   <Route name="app" path="/" handler={App}>
     <Route name="blog" path="/blog" handler={BlogHandler}/>
     <Route name="post" path="/blog/:post" handler={PostHandler} />
-    <Route name = "galaga" path = "/galaga" handler = {GalagaHandler} />
+    <Route name = "resume" path = "/about" handler = {ResumeHandler} />
     <DefaultRoute handler = {HomeHandler}/>
   </Route>
 );
