@@ -15,7 +15,7 @@ var Graphic = React.createClass({
 
 	componentDidUpdate: function() {
 		var context = this.getDOMNode().getContext('2d');
-		context.clearRect(0, 0, window.innerWidth, window.innerHeight *3);
+		context.clearRect(0, 0, window.innerWidth, window.innerHeight *2);
 		this.paint1(context);
 		this.paint2(context)
 		this.paint3(context)
@@ -24,8 +24,8 @@ var Graphic = React.createClass({
 	
 	paint1: function(context) {
 		var red = parseInt(155 * (this.props.xLocation/window.innerWidth)+100)
-		var green = parseInt(155 * (this.props.yLocation/(window.innerHeight * 3))+100)
-		var blue = parseInt(((this.props.xLocation*this.props.yLocation)/(window.innerWidth*window.innerHeight*3))*155+100)
+		var green = parseInt(155 * (this.props.yLocation/(window.innerHeight * 2))+100)
+		var blue = parseInt(((this.props.xLocation*this.props.yLocation)/(window.innerWidth*window.innerHeight*2))*155+100)
 		context.save();
 		context.translate(this.props.xLocation,this.props.yLocation);
 		context.fillStyle = 'rgb(' +red+ ',' + green + ',' + blue + ')'
@@ -34,18 +34,18 @@ var Graphic = React.createClass({
 	},
 	paint2: function(context) {
 		var green = parseInt(255 * (this.props.xLocation/window.innerWidth))
-		var blue = parseInt(255 * (this.props.yLocation/(window.innerHeight * 3)))
-		var red = parseInt(((this.props.xLocation*this.props.yLocation)/(window.innerWidth*window.innerHeight*3))*255)
+		var blue = parseInt(255 * (this.props.yLocation/(window.innerHeight * 2)))
+		var red = parseInt(((this.props.xLocation*this.props.yLocation)/(window.innerWidth*window.innerHeight*2))*255)
 		context.save();
 		context.translate(-this.props.xLocation -150,-this.props.yLocation - 150);
 		context.fillStyle = 'rgb(' +red+ ',' + green + ',' + blue + ')'
-		context.fillRect(window.innerWidth, window.innerHeight*3, 150, 150);
+		context.fillRect(window.innerWidth, window.innerHeight*2, 150, 150);
 		context.restore();
 	},
 	paint3: function(context) {
 		var red = parseInt(255 * (this.props.xLocation/window.innerWidth))
-		var blue = parseInt(255 * (this.props.yLocation/(window.innerHeight * 3)))
-		var green = parseInt(((this.props.xLocation*this.props.yLocation)/(window.innerWidth*window.innerHeight*3))*255)
+		var blue = parseInt(255 * (this.props.yLocation/(window.innerHeight * 2)))
+		var green = parseInt(((this.props.xLocation*this.props.yLocation)/(window.innerWidth*window.innerHeight*2))*255)
 		context.save();
 		context.translate(-this.props.xLocation -150,this.props.yLocation);
 		context.fillStyle = 'rgb(' +red+ ',' + green + ',' + blue + ')'
@@ -54,16 +54,16 @@ var Graphic = React.createClass({
 	},
 	paint4: function(context) {
 		var blue = parseInt(255 * (this.props.xLocation/window.innerWidth))
-		var green = parseInt(255 * (this.props.yLocation/(window.innerHeight * 3)))
-		var red = parseInt(((this.props.xLocation*this.props.yLocation)/(window.innerWidth*window.innerHeight*3))*255)
+		var green = parseInt(255 * (this.props.yLocation/(window.innerHeight * 2)))
+		var red = parseInt(((this.props.xLocation*this.props.yLocation)/(window.innerWidth*window.innerHeight*2))*255)
 		context.save();
 		context.translate(this.props.xLocation,-this.props.yLocation-150);
 		context.fillStyle = 'rgb(' +red+ ',' + green + ',' + blue + ')'
-		context.fillRect(0, window.innerHeight*3, 150, 150);
+		context.fillRect(0, window.innerHeight*2, 150, 150);
 		context.restore();
 	},
 	render: function() {
-		return <canvas width={window.innerWidth} height={window.innerHeight *3} />;
+		return <canvas width={window.innerWidth} height={window.innerHeight *2} />;
 	}
 
 });
@@ -83,7 +83,7 @@ var FallingBlocks = React.createClass({
 
 	tick: function() {
 		var difx,dify;
-		if (this.state.yLocation > (window.innerHeight*3-100) || this.state.yLocation <0) this.state.down = !this.state.down
+		if (this.state.yLocation > (window.innerHeight*2-100) || this.state.yLocation <0) this.state.down = !this.state.down
 		if (this.state.xLocation > (window.innerWidth -100) || this.state.xLocation <0) this.state.right = !this.state.right
 		if (this.state.right) difx = 3
 		else difx = -3
