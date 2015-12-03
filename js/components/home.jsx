@@ -9,7 +9,6 @@ let Home = React.createClass({
 	    <div className = "col-md-12 home">
 	    	<div className = "content">
 	    		<FallingBlocks/>
-				<h1 className = "blogTitle"><a href="#/blog">I also write sometimes... <i className = "fa fa-chevron-right"></i></a></h1>
 		    	<div className = "col-md-12 homePane" id = "intro">
 		    		<div className = "row">
 			    		<div className = 'introContainer'>
@@ -29,6 +28,8 @@ let Home = React.createClass({
 		    			<h1 className = 'title'>Things I do in my free time...</h1>
 		    			<div className = "projectContainer">
 		    				<ul>
+		    					<li><a href = "https://github.com/qwerpoiuty/AmIBad" target = "_blank" ><h2 className = "projectName">GitGud</h2></a>
+			    				<h3 className = "projectDescription">A webapp designed to help you get better at league of legends. Visualizes your performance and compares it to others of the same skill level.</h3></li>
 		    					<li><a href = "http://www.quokka.chat" target = "_blank" ><h2 className = "projectName">QuokkaChat</h2></a>
 			    				<h3 className = "projectDescription">A webapp to remove some of the noise involved with commenting on videos. Organizes comments based on the video time they were made. Comments on screen will update as the video plays!</h3></li>
 		    					<li><a href = "https://github.com/qwerpoiuty/FaceOff" target = "_blank" ><h2 className = "projectName">FaceOff</h2></a>
