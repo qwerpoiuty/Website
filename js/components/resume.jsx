@@ -1,9 +1,14 @@
 import React from 'react';
 import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
+import InfinityMenu from "react-infinity-menu";
 
+
+console.dir(InfinityMenu);
 let Resume = React.createClass({
+
 	render(){
 		return(
+			
 			<div className = 'resume-container'>
 				<div className='basic-info'>
 					<h1 className='heading'>Basic Info</h1>
@@ -29,6 +34,6 @@ let Resume = React.createClass({
 
 			)
 	}
-})
+});
 
-export default Resume
+export default Resume;

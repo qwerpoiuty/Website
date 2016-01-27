@@ -6,7 +6,7 @@ var paths = {
       published: '2015-08-07',
       preview: 'Icebreaker! Because everyone loves those! I\'m going to introduce myself and try to explain what I\'m writing. Please read this first?'
     },
-    two:{
+    two: {
       title: 'ProgrammingIsFun',
       md: '02-jswat.md',
       published: '2015-10-01',

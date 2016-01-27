@@ -50,6 +50,9 @@ var config = {
         }, {
             test: /\.md$/,
             loader: 'raw!markdown'
+        }, {
+            test: /\.css$/,
+            loader: "style-loader!css-loader"
         }]
     },
 
