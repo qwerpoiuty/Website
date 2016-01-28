@@ -35,12 +35,12 @@ let Home = React.createClass({
 							<h3 className = "projectDescription col-md-8">A webapp to remove some of the noise involved with commenting on videos. Organizes comments based on the video time they were made. Comments on screen will update as the video plays!</h3>
 						</div>
 						<div className = "projectContainer row">
-							<a href = "https://github.com/qwerpoiuty/FaceOff" target = "_blank" ><h2 className = "projectName col-md-3">FaceOff</h2></a>
-							<h3 className = "projectDescription col-md-8">A game 2 person game where you literally have to dodge incoming fire. Fire back at your opponent with simple math questions.</h3>
+							<a href = "g-o-l.herokuapp.com" target = "_blank" ><h2 className = "projectName col-md-3">Game of Life</h2></a>
+							<h3 className = "projectDescription col-md-8">My version of the Game of Life. Written in vanilla JavaScript.</h3>
 						</div>
 						<div className = "projectContainer row">
-							<a href = "https://github.com/qwerpoiuty/gameoflife" target = "_blank" ><h2 className = "projectName col-md-3">Game of Life</h2></a>
-							<h3 className = "projectDescription col-md-8">My version of the Game of Life. Written in vanilla JavaScript.</h3>
+							<a href = "https://github.com/qwerpoiuty/FaceOff" target = "_blank" ><h2 className = "projectName col-md-3">FaceOff</h2></a>
+							<h3 className = "projectDescription col-md-8">A game 2 person game where you literally have to dodge incoming fire. Fire back at your opponent with simple math questions.</h3>
 						</div>
 					</div>
 				</div>
