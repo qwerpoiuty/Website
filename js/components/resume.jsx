@@ -1,9 +1,6 @@
 import React from 'react';
 import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
-import InfinityMenu from "react-infinity-menu";
 
-
-console.dir(InfinityMenu);
 let Resume = React.createClass({
 
 	render(){
