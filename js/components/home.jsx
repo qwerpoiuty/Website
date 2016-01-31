@@ -27,7 +27,7 @@ let Home = React.createClass({
 					<div className = "BlogContainer">
 						<h1 className = 'title'>Things I do in my free time...</h1>
 						<div className = "projectContainer row">
-							<a href = "https://github.com/qwerpoiuty/AmIBad" target = "_blank" ><h2 className = "projectName col-md-3">GitGud</h2></a>
+							<a href = "http://gitgud.herokuapp.com/" target = "_blank" ><h2 className = "projectName col-md-3">GitGud</h2></a>
 							<h3 className = "projectDescription col-md-8">A webapp designed to help you get better at league of legends. Visualizes your performance and compares it to others of the same skill level.</h3>
 						</div>
 						<div className = "projectContainer row">
@@ -35,7 +35,7 @@ let Home = React.createClass({
 							<h3 className = "projectDescription col-md-8">A webapp to remove some of the noise involved with commenting on videos. Organizes comments based on the video time they were made. Comments on screen will update as the video plays!</h3>
 						</div>
 						<div className = "projectContainer row">
-							<a href = "g-o-l.herokuapp.com" target = "_blank" ><h2 className = "projectName col-md-3">Game of Life</h2></a>
+							<a href = "http://g-o-l.herokuapp.com" target = "_blank" ><h2 className = "projectName col-md-3">Game of Life</h2></a>
 							<h3 className = "projectDescription col-md-8">My version of the Game of Life. Written in vanilla JavaScript.</h3>
 						</div>
 						<div className = "projectContainer row">
